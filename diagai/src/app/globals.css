@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './font.css';
+
+:root {
+  --primary-color: #6562F5;
+  --btn-hover: #6967fde0;
+  --off-white-color: #f3f6fc;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--primary-color); 
+  color: #fff;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 430px;
+  }
+}
+
+@media screen and (min-width: 1024) {
+  .btn {
+    width: 649;
+  }
+}
+
+h1, p {
+  font-family: 'Montserrat';
+}
+
+.signin {
+  color: var(--primary-color);
+}
+
+header {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.info {
+  color: var(--primary-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, textarea{
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-weight: bold;
+  resize: none;
+  transition: all .1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+.result {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.result a:hover {
+  color: rgb(253 224 71);
+  cursor: pointer;
+}
+
+/* Topbar sytlings */
+.hamburgerContainer {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.hamburgerContainer .menu-btn-label {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.hamburgerContainer .menu-btn-label .hamburger {
+  display: block;
+  position: relative;
+  width: 1.5rem;
+  height: 3px;
+  background-color: #000;
+  transition: background-color 0.2s ease-out;
+}
+
+.hamburgerContainer .menu-btn-label .hamburger::before,
+.hamburgerContainer .menu-btn-label .hamburger::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.hamburgerContainer .menu-btn-label .hamburger::before {
+  top: 0.5rem;
+}
+
+.hamburgerContainer .menu-btn-label .hamburger::after {
+  top: -0.5rem;
+}
+
+.hamburgerContainer .menu-btn:checked + .menu-btn-label .hamburger::before {
+  transform: rotate(-45deg);
+}
+
+.hamburgerContainer .menu-btn:checked + .menu-btn-label .hamburger::after {
+  transform: rotate(45deg);
+}
+
+.hamburgerContainer .menu-btn:checked + .menu-btn-label .hamburger {
+  background-color: transparent;
+}
+
+.hamburgerContainer .menu-btn:checked + .menu-btn-label .hamburger::before,
+.hamburgerContainer .menu-btn:checked + .menu-btn-label .hamburger::after {
+  top: 0;
+}
+
+.navDisplay {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  z-index: 3;
+  width: 130px;
+  height: auto;
+  /* background: var(--off-white-color); */
+  border-radius: 8px;
+  color: #000;
+  overflow: hidden;
+  display: none;
+  /* border: 1px solid var(--active-feature-background); */
+}
+
+.show {
+  display: block;
+}
+
+.navDisplay ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  padding-block: 0;
+  flex-shrink: 0;
+}
+
+.navDisplay > ul > li {
+  width: 100%;
+}
+
+.navDisplay > ul > li a {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.navDisplay > ul > li img {
+  width: 24px;
+  /* margin-inline: auto; */
+}
+
+.navDisplay > ul > li:hover {
+  color: var(--btn-hover);
+  text-decoration: none;
+  cursor: pointer;
+  animation: wobble 3s ease-in-out;
+  -webkit-animation: wobble 3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--btn-hover);
+}
+
+.navDisplay > ul > li:hover img {
+  cursor: pointer;
+}
+
+/* Sidebar sytling */
+.sidebar {
+  background-color: #F0F0F5;
+}
+
+.dashboard {
+  background-color: #CADD57;
+  color: #fff;
+  border-radius: 8px;
+}
