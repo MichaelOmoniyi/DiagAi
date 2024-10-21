@@ -21,7 +21,7 @@ const page = () => {
       {screenWidth > 768 ? (
         <div className="flex h-full">
           <Sidebar />
-          <div className="h-full w-full overflow-auto">
+          <div className="h-full w-full overflow-auto pt-6 pb-3">
             <Profile />
           </div>
         </div>
