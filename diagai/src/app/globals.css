@@ -41,15 +41,18 @@ h1, p {
   color: var(--primary-color);
 }
 
+/* Header component styles */
 header {
   font-family: 'Montserrat';
   font-weight: bold;
 }
 
+/* Info component styles */
 .info {
   color: var(--primary-color);
 }
 
+/* Styles for component to get user inputs */
 label {
   display: block;
   margin-bottom: 10px;
@@ -70,6 +73,7 @@ input:focus, textarea:focus {
   border-width: 2px;
 }
 
+/* User's result component styles */
 .result {
   width: 100%;
   background-color: var(--primary-color);
@@ -83,7 +87,7 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 
-/* Topbar sytlings */
+/* Topbar component styles */
 .hamburgerContainer {
   cursor: pointer;
   display: inline-block;
@@ -207,17 +211,19 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 
-/* Sidebar sytling */
+/* Sidebar comoponent styles */
 .sidebar {
   background-color: #F0F0F5;
 }
 
+/* Dashboard component styles */
 .dashboard {
   background-color: #CADD57;
   color: #fff;
   border-radius: 8px;
 }
 
+/* Styles for the table in the record component  */
 table {
   width: 200%;
 }
