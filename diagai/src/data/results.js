@@ -13,11 +13,11 @@ const diagonis = [
   {
     id: 2,
     percent: "56%",
-    diagonis: "Fever",
+    diagonis: "Corona Virus",
     references: [
-      "nigeria_fever__info_data.pdf",
-      "fever_symptoms.pdf",
-      "nigeria_fever_data.pdf",
+      "nigeria_corona_virus__info_data.pdf",
+      "corona_virus_symptoms.pdf",
+      "nigeria_corona_virus_data.pdf",
       "nigeria_disease_center.pdf",
     ],
   },
